@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Tahlil/web3-storage-upload#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "minimist": "^1.2.6",
     "web3.storage": "^4.2.0"
   }
