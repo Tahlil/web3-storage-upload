@@ -2,6 +2,11 @@ const { exec } = require("child_process");
 //requiring path and fs modules
 const path = require('path');
 const fs = require('fs');
+
+const dotenv = require('dotenv');
+dotenv.config({ path: path.resolve(__dirname, './.env') });
+const API_KEY = process.env.API_KEY || '';
+
 //joining path of directory 
 const directoryPath = path.join(__dirname, 'files');
 //passsing directoryPath and callback function
